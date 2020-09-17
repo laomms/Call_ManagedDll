@@ -15,7 +15,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	if (hModule != NULL)
 	{
 		apprun pAppRun = (apprun)GetProcAddress(hModule, "apprun");
-		const char* ss= pAppRun(123,"456");
+		const char* ss= pAppRun(0x123,"456");
 		cout << ss << endl;
 		pAppRun = NULL;
 		ss = NULL;

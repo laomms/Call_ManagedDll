@@ -11,16 +11,22 @@ namespace testdll
 {
     public class Class1
     {
+
+		public static string apprun2(int apidata, [MarshalAs(UnmanagedType.LPStr)] string pluginkey)
+		{
+			int n = apidata + 0x210;
+			return pluginkey + "-" + n.ToString("X2");
+		}
+
+
 		[DllExport(CallingConvention = CallingConvention.StdCall)]
 		[return: MarshalAs(UnmanagedType.LPStr)]
 		public static string apprun(int apidata, [MarshalAs(UnmanagedType.LPStr)] string pluginkey)
 		{
-			return "abc";
+			int n = apidata + 0x210;
+			return pluginkey +"-" + n.ToString("X2");
 		}
 
-		public static string apprun2(int apidata, [MarshalAs(UnmanagedType.LPStr)] string pluginkey)
-		{
-			return "abc";
-		}
+		
 	}
 }

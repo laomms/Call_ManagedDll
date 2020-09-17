@@ -34,7 +34,7 @@ int main()
     PCWSTR pszAssemblyName = L"DllUnload";
     PCWSTR ClassName = L"testdll.Class1";
     PCWSTR MethodName = L"apprun2";
-    int Agr1 = 123;
+    int Agr1 = 0x123;
     const char* Agr2 = "456";
 
     HRESULT hr;
