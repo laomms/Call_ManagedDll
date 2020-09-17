@@ -1,8 +1,8 @@
-# 几种C++调用C# DLL的方法例子  
+# 几种C++调用C# DLL的简单例子  
 
 ### 1. C#通过导出函数由C++用LoadLibrary加载dll.  
 
-### 2. Clr引入C# DLL后直接调用.  
+### 2. Clr引入C# DLL后直接调用（见ClrTest工程）.  
 
 ### 3. c++通过CLR托管接口从内存中加载.NET程序集（见ClrHost工程）.   
 
