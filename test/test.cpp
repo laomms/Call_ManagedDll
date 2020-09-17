@@ -19,7 +19,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << ss << endl;
 		pAppRun = NULL;
 		ss = NULL;
-		FreeLibrary(hModule);//将不起作用
+		FreeLibrary(hModule);//将不起作用 
 	}    
 
 
