@@ -33,7 +33,7 @@ int main()
     PCWSTR pszVersion = L"v4.0.30319";
     PCWSTR pszAssemblyName = L"DllUnload";
     PCWSTR ClassName = L"testdll.Class1";
-    PCWSTR MethodName = L"apprun";
+    PCWSTR MethodName = L"apprun2";
     int Agr1 = 123;
     const char* Agr2 = "456";
 

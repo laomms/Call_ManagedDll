@@ -9,7 +9,8 @@ using namespace testdll;
 int main(array<System::String ^> ^args)
 {
     Class1^ pInstance = gcnew Class1();
-    String^ rez = pInstance->apprun(123, "456");
+    String^ rez = pInstance->apprun2(123, "456");
     Console::WriteLine(rez);
+    Console::ReadLine();
     return 0;
 }
